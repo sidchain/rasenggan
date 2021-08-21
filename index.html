@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rasenggan</title>
+</head>
+<body>
+    <center>
+        <div class="login" id="login">
+            <input type="email" id="surel" class="surel" placeholder="Email"/>
+            <input type="password" id="sandi" class="sandi" placeholder="Password"/>
+            <button type="button" id="masuk" class="masuk" onclick="masuk()"><i class="fa fa-sign-in" aria-hidden="true"></i> Masuk</button>
+        </div>
+        <div class="profil" id="profil">
+            <div id="fotoProfil" class="fotoProfil" onclick="lihatProfil()">
+            <i class="fa fa-pencil-square-o" id="edit" aria-hidden="true"></i></div>
+            <div class="nama" id="nama"><p>Memuat...</p></div>
+            <div class="mail" id="mail"><p>Memuat...</p></div>
+            <button type="button" id="chat" class="chat" onclick="chat()"><i class="fa fa-comments" aria-hidden="true"></i> Chat</button>
+            <button type="button" id="timeline" class="timeline" onclick="tlOpen()"><i class="fa fa-eye" aria-hidden="true"></i> Timeline</button>
+            <button type="button" id="keluar" class="keluar" onclick="keluar()"><i class="fa fa-sign-out" aria-hidden="true"></i> Keluar</button>
+        </div>
+        <div class="mengchat" id="mengchat">
+          <i class="fa fa-arrow-circle-left" id="panah" onclick="kembali1()" aria-hidden="true"></i>
+          <button class="orang" type="button" onclick="Athoi()">Athoi</button>
+          <button class="orang" type="button" onclick="Abil()">Abil</button>
+          <button class="orang" type="button" onclick="Dede()">Dede</button>
+          <button class="orang" type="button" onclick="Deva()">Deva</button>
+          <button class="orang" type="button" onclick="Grup()">Grup</button>
+        </div>
+        <div class="melihatProfil" id="melihatProfil">
+          <i id="panah" class="fa fa-arrow-circle-left" aria-hidden="true" onclick="kembali1()"></i>
+          <div class="fotoProfil2" id="fotoProfil2"></div>
+          <button type="button" class="pilihFile" id="pilihFile" onclick="pilihGambar()"><i class="fa fa-picture-o" aria-hidden="true"></i> Pilih Gambar Baru..</button>
+          <input id="uploadBtn" type="file" accept="image/*" class="upload" style="display: none;"/>
+          <input id="uploadFile" class="lokasi" placeholder="Lokasi Gambar" disabled="disabled"/>
+          <button type="button" class="kirkon" id="kirkon" onclick="kirkon()">Upload Gambar Profil</button>
+          <div class="katpro" id="katpro"><p>&nbsp;</p></div>
+          <div class="proses" id="proses"><div class="mempro" id="mempro"></div></div>
+        </div>
+        <section id="perpesanan">
+            <div class="header">
+                Chat
+                <i class="fa fa-arrow-left" id="balek" onclick="kembali2()" aria-hidden="true"></i>
+              </div>
+              <div class="message-body" id="message-body">
+                <div class="loader" id="loader"></div>
+              </div>
+              <div class="footer">
+                <center>
+                  <input type="text" placeholder="Tulis Pesan.." class="message-input" id="message-input"/>
+                </center>
+              </div>
+        </section>
+        <section class="tembok" id="tembok">
+          <i class="myTL" id="myTL" onclick="TLmy()"><i class="fa fa-plus-square-o" aria-hidden="true"></i> My Wall</i>
+          <div class="people" id="peopleAbil">
+            <p>ABIL</p>
+            <img class="foto" id="fotoAbil1">
+            <img class="foto" id="fotoAbil2">
+            <img class="foto" id="fotoAbil3">
+            <img class="foto" id="fotoAbil4">
+            <img class="foto" id="fotoAbil5">
+            <img class="foto" id="fotoAbil6">
+            <img class="foto" id="fotoAbil7">
+            <img class="foto" id="fotoAbil8">
+            <img class="foto" id="fotoAbil9">
+          </div>
+          <div class="people" id="peopleAthoi">
+            <p>ATHOI</p>
+            <img class="foto" id="fotoAthoi1">
+            <img class="foto" id="fotoAthoi2">
+            <img class="foto" id="fotoAthoi3">
+            <img class="foto" id="fotoAthoi4">
+            <img class="foto" id="fotoAthoi5">
+            <img class="foto" id="fotoAthoi6">
+            <img class="foto" id="fotoAthoi7">
+            <img class="foto" id="fotoAthoi8">
+            <img class="foto" id="fotoAthoi9">
+          </div>
+          <div class="people" id="peopleDede">
+            <p>DEDE</p>
+            <img class="foto" id="fotoDede1">
+            <img class="foto" id="fotoDede2">
+            <img class="foto" id="fotoDede3">
+            <img class="foto" id="fotoDede4">
+            <img class="foto" id="fotoDede5">
+            <img class="foto" id="fotoDede6">
+            <img class="foto" id="fotoDede7">
+            <img class="foto" id="fotoDede8">
+            <img class="foto" id="fotoDede9">
+          </div>
+          <div class="people" id="peopleDeva">
+            <p>DEVA</p>
+            <img class="foto" id="fotoDeva1">
+            <img class="foto" id="fotoDeva2">
+            <img class="foto" id="fotoDeva3">
+            <img class="foto" id="fotoDeva4">
+            <img class="foto" id="fotoDeva5">
+            <img class="foto" id="fotoDeva6">
+            <img class="foto" id="fotoDeva7">
+            <img class="foto" id="fotoDeva8">
+            <img class="foto" id="fotoDeva9">
+          </div>
+          <i id="panah" class="fa fa-arrow-circle-left" aria-hidden="true" onclick="kembali1()"></i><br/>
+        </section>
+        <section class="tembokku" id="tembokku">
+          <i id="panah" class="fa fa-arrow-circle-left" aria-hidden="true" onclick="kembali1()"></i><br/>
+          <img class="fotoku" id="fotoku1">
+          <img class="fotoku" id="fotoku2">
+          <img class="fotoku" id="fotoku3">
+          <img class="fotoku" id="fotoku4">
+          <img class="fotoku" id="fotoku5">
+          <img class="fotoku" id="fotoku6">
+          <img class="fotoku" id="fotoku7">
+          <img class="fotoku" id="fotoku8">
+          <img class="fotoku" id="fotoku9">
+        </section>
+    </center>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase.js"></script>
+<script src="script/firebase.js"></script>
+<script src="script/index.js"></script>
+</html>

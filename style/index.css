@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+img {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 5px;
+}
+body {
+  background: #dfe4e9;
+  padding: 0;
+  margin: 0;
+}
+input {
+    padding: 7px;
+    width: 250px;
+    display: block;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Dosis';
+    color: #5c5c5c;
+    font-weight: bolder;
+    border: none;
+    background: none;
+    border-radius: 10px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+}
+button {
+    border: none;
+    display: block;
+    width: 175px;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;
+    font-style: normal;
+    font-weight: bolder;
+    font-family: 'Dosis';
+    color: #4c4c4c;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px white;
+}
+button:active {
+    background: none;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+
+}
+p {
+    font-family: 'Dosis';
+    font-weight: bolder;
+    margin: 0;
+    color: #4c4c4c;
+}
+.proses{
+  width: 100%;
+  height: 5px;
+  background: grey;
+}
+.mempro{
+  float: left;
+  width: 0%;
+  height: 100%;
+  background: cyan;
+}
+.login, .profil, .melihatProfil, .mengchat, .tembok, .tembokku {
+    width: 275px;
+    align-items: center;
+    margin-top: 120px;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 35px 35px 25px 35px;
+    background: #dfe4e9;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px white;
+}
+.myTL{
+  font-style: normal;
+  font-family: 'Dosis';
+  font-weight: bolder;
+  background: #d8e9e9;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 3px 3px 8px #b1b1b1,
+              -3px -3px 8px white;
+}
+.people{
+  padding: 10px;
+  box-shadow: inset 8px 8px 8px #cbced1,
+  inset -8px -8px 8px #ffffff;
+}
+.foto, .fotoku {
+  margin: 1px;
+  width: 75px;
+  height: 75px;
+  background: black;
+}
+.masuk {
+    background: #cce0e6;
+}
+.keluar {
+    background: #e6cccc;
+}
+.chat, .kirkon {
+    background: #d1e6cc;
+}
+.timeline, .pilihFile, .orang {
+    background: #cce2e6;
+}
+.fotoProfil, .fotoProfil2 {
+    width: 150px;
+    height: 150px;
+    background-image: url('picture/pp.jpg');
+    background-size: cover;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #555,
+                -3px -3px 5px white;
+}
+.profil p {
+    margin: 5px;
+}
+#edit {
+    color: white;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px #1b1b1b;
+}
+#panah {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #e47d7d;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #b1b1b1,
+                -2px -2px 5px white;
+}
+#balek {
+    position: absolute;
+    left: 10%;
+    top: 20px;
+    cursor: pointer;
+}
+section {display: none;}
+.login {display: none;}
+.melihatProfil {display: none;}
+.mengchat {display: none;}
+
+.header {
+  height: 50px;
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  background-color: #dfe4e9;
+  color: #4c4c4c;
+  font-weight: bolder;
+  padding-top: 5px;
+  font-size: 35px;
+  box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px white;
+}
+.message-body {
+  height: 200px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.footer {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  background: #dfe4e9;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px white;
+}
+.message-input {
+  height: 0;
+  width: 80%;
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 17px;
+  outline: none;
+  border: 0;
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  background: #dfe4e9;
+  transition: 0.3s;
+}
+.message-holder {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 5px;
+  display: inline-flex;
+  font-size: 17px;
+}
+.my-text {
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  color: #1b1b1b;
+  font-family: 'Dosis', sans-serif;
+  margin-left: auto;
+  text-align: justify;
+  right: 0;
+  max-width: 300px;
+  border-radius: 7px;
+  margin-right: 20px;
+  box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px white;
+}
+.their-name {
+  color: #1b1b1b;
+  font-family: 'Dosis', sans-serif;
+  height: fit-content;
+  width: fit-content;
+  margin-right: auto;
+  left: 0;
+  margin-left: 25px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+.my-name {
+  color: #1b1b1b;
+  font-family: 'Dosis', sans-serif;
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  right: 0;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+.their-text {
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  font-family: 'Dosis', sans-serif;
+  margin-right: auto;
+  text-align: justify;
+  left: 0;
+  max-width: 300px;
+  border-radius: 4px;
+  margin-left: 20px;
+  box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px white;
+}
+.loader {
+  position: absolute;
+  height: 100px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 1;
+  transition: 0.2s;
+}
+/* INSTALASI SCROLL */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #4c4c4c;
+  border-radius: 5px;
+}
