@@ -11,26 +11,28 @@
 <body>
     <center>
         <div class="login" id="login">
-            <input type="email" id="surel" class="surel" placeholder="Email"/>
-            <input type="password" id="sandi" class="sandi" placeholder="Password"/>
-            <button type="button" id="masuk" class="masuk" onclick="masuk()"><i class="fa fa-sign-in" aria-hidden="true"></i> Masuk</button>
+          <input type="email" id="surel" class="surel" placeholder="Email"/>
+          <input type="password" id="sandi" class="sandi" placeholder="Password"/>
+          <button type="button" id="masuk" class="masuk" onclick="masuk()"><i class="fa fa-sign-in" aria-hidden="true"></i> Masuk</button>
+          <p>Belum punya akun?</p>
+          <button type="button" class="daftar" onclick="ngisiData()"><i class="fa fa-pencil" aria-hidden="true"></i> Daftar</button>
+        </div>
+        <div class="signup" id="signup">
+          <input type="text" id="jeneng" class="jeneng" placeholder="Nama"/>
+          <input type="email" id="surel2" class="surel2" placeholder="Email"/>
+          <input type="password" id="sandi2" class="sandi2" placeholder="Password"/>
+          <button type="button" id="daftar" class="daftar" onclick="daftar()"><i class="fa fa-pencil" aria-hidden="true"></i> Daftar Sekarang</button>
         </div>
         <div class="profil" id="profil">
-            <div id="fotoProfil" class="fotoProfil" onclick="lihatProfil()">
-            <i class="fa fa-pencil-square-o" id="edit" aria-hidden="true"></i></div>
-            <div class="nama" id="nama"><p>Memuat...</p></div>
-            <div class="mail" id="mail"><p>Memuat...</p></div>
-            <button type="button" id="chat" class="chat" onclick="chat()"><i class="fa fa-comments" aria-hidden="true"></i> Chat</button>
-            <button type="button" id="timeline" class="timeline" onclick="tlOpen()"><i class="fa fa-eye" aria-hidden="true"></i> Timeline</button>
-            <button type="button" id="keluar" class="keluar" onclick="keluar()"><i class="fa fa-sign-out" aria-hidden="true"></i> Keluar</button>
-        </div>
-        <div class="mengchat" id="mengchat">
-          <i class="fa fa-arrow-circle-left" id="panah" onclick="kembali1()" aria-hidden="true"></i>
-          <button class="orang" type="button" onclick="Athoi()">Athoi</button>
-          <button class="orang" type="button" onclick="Abil()">Abil</button>
-          <button class="orang" type="button" onclick="Dede()">Dede</button>
-          <button class="orang" type="button" onclick="Deva()">Deva</button>
-          <button class="orang" type="button" onclick="Grup()">Grup</button>
+          <div class="coveran" id="coveran">
+          <div id="fotoProfil" class="fotoProfil" onclick="lihatProfil()">
+          <i class="fa fa-pencil-square-o" id="edit" aria-hidden="true"></i></div>
+          </div>
+          <div class="nama" id="nama"><p>Memuat Nama...</p></div>
+          <div class="mail" id="mail"><p>Memuat Email...</p></div>
+          <button type="button" id="chat" class="chat" onclick="chat()"><i class="fa fa-comments" aria-hidden="true"></i> Chat</button>
+          <button type="button" id="timeline" class="timeline" onclick="tlOpen()"><i class="fa fa-eye" aria-hidden="true"></i> Timeline</button>
+          <button type="button" id="keluar" class="keluar" onclick="keluar()"><i class="fa fa-sign-out" aria-hidden="true"></i> Keluar</button>
         </div>
         <div class="melihatProfil" id="melihatProfil">
           <i id="panah" class="fa fa-arrow-circle-left" aria-hidden="true" onclick="kembali1()"></i>
@@ -41,6 +43,12 @@
           <button type="button" class="kirkon" id="kirkon" onclick="kirkon()">Upload Gambar Profil</button>
           <div class="katpro" id="katpro"><p>&nbsp;</p></div>
           <div class="proses" id="proses"><div class="mempro" id="mempro"></div></div>
+        </div>
+        <div class="gantiNama" id="gantiNama">
+          <p id="nickNow">Memuat Nama..</p>
+          <i id="panah" class="fa fa-arrow-circle-left" aria-hidden="true" onclick="kembali1()"></i><br/>
+          <input type="text" maxlength="10" id="nickChange" placeholder="Tulis Nama Baru">
+          <button type="button" onclick="submitNick()">Ganti Sekarang</button>
         </div>
         <section id="perpesanan">
             <div class="header">
